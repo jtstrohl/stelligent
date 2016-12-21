@@ -358,7 +358,8 @@ def create_stack(id, secret, key_pair, region, template):
                         elif stack_build_status == 'CREATE_COMPLETE':
                             print 'Cloud Formation Stack Build Status : COMPLETE'
                             
-                            # Display the Web Server URL obtained from the Outputs of the CF Stack
+                            # Display useful information about the provisioned environment, including
+                            #     the VPC ID and Web Server URL obtained from the Outputs of the CF Stack
                             stack_outputs = stack_details['Stacks'][0]['Outputs']
                             for stack_output in stack_outputs:
                                 if stack_output['OutputKey'] == 'VPC':
