@@ -295,7 +295,7 @@ def create_template(key_pair, region, type_instance):
                 Name=NAME_PREFIX+'webserver',
                 Project=PROJECT)))
 
-    # Add an Output to the Template for the URL
+    # Add Outputs to the Template for the VPC ID and URL
     t.add_output(
         [
             Output('VPC',
