@@ -16,7 +16,7 @@ VPC_CIDR = '10.0.0.0/16'
 SUBNET_CIDR = '10.0.0.0/24'
 PROJECT = 'Jonathan Strohl\'s Mini-Project'
 NAME_PREFIX = 'jstrohl-miniproject-'
-STACK_NAME = NAME_PREFIX + 'stack2'
+STACK_NAME = NAME_PREFIX + 'stack'
 
 # TODO: Consider adding more supported regions, in addition to US
 supported_regions_ami_map = {
